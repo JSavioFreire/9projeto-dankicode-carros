@@ -1,0 +1,67 @@
+@charset "UTF-8";
+@font-face {
+    font-family: nova;
+    src: url(../fonts/METAFORA-Bold.otf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: nova, Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+.clear{
+    clear: both;
+}
+
+        /*Header*/
+
+header #divlogo{
+    margin: 20px 60px;
+    float: left;
+}
+header nav{
+    float: right;
+    margin: 50px 100px 0 0;
+}
+header nav ul li{
+    display: inline-block;
+    font-size: 28px;
+    margin-left: 60px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+
+    /*Painel*/
+
+#fundo{
+    background-color: black;
+    height: 92vh;
+}
+#fundo #escrito{
+    float: left;
+    width: 350px;
+    margin: 70px 0 0 40px;
+}
+#fundo #escrito > div h2{
+    background-image: url(../imagens/box-text.png);
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    font-size: 30px;
+    padding-left: 40px;
+    color: white;
+}
+#fundo #imgfundo{
+    float: right;
+    vertical-align: top;
+
+}
+#fundo #escrito > div:last-child h2{
+    background-image: url(../imagens/box-white-text.png);
+    color: black;
+    
+
+}
