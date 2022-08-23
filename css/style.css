@@ -15,7 +15,9 @@
 }
 
         /*Header*/
-
+header{
+    height: 120px;
+}
 header #divlogo{
     margin: 20px 60px;
     float: left;
@@ -39,29 +41,15 @@ header nav ul li a{
 
 #fundo{
     background-color: black;
-    height: 92vh;
+    height: calc(100vh - 120px);
+    background-image: url(../imagens/bg.jpg);
+    background-position: bottom right;
+    background-repeat: no-repeat;
 }
-#fundo #escrito{
-    float: left;
-    width: 350px;
-    margin: 70px 0 0 40px;
-}
-#fundo #escrito > div h2{
+#fundo > div{
     background-image: url(../imagens/box-text.png);
     background-repeat: no-repeat;
-    margin-top: 30px;
-    font-size: 30px;
-    padding-left: 40px;
-    color: white;
-}
-#fundo #imgfundo{
-    float: right;
-    vertical-align: top;
-
-}
-#fundo #escrito > div:last-child h2{
-    background-image: url(../imagens/box-white-text.png);
-    color: black;
+    background-size: 500px;
     
-
 }
+
