@@ -8,6 +8,7 @@
     margin: 0;
     font-family: nova, Arial, Helvetica, sans-serif;
     font-style: italic;
+    box-sizing: border-box;
 }
 
 .clear{
@@ -35,7 +36,15 @@ header nav ul li a{
     text-decoration: none;
     color: black;
 }
-
+header nav ul li a:hover{
+    color: #fe373a;
+}
+header nav ul li a:active{
+    color: #EC2E30;
+}
+.atual{
+    color: #EC2E30;
+}
 
     /*Painel*/
 
@@ -46,10 +55,321 @@ header nav ul li a{
     background-position: bottom right;
     background-repeat: no-repeat;
 }
-#fundo > div{
+#fundo #escrito > div{
     background-image: url(../imagens/box-text.png);
     background-repeat: no-repeat;
-    background-size: 500px;
-    
+    width: 250px;
+    padding: 50px 0;
+    box-sizing: border-box;
+    background-size: 100%;
+    text-align: left;
+    position: relative;
+    top: 80px;
+    left: 150px;
+}
+#fundo #escrito div h2{
+    color: white;
+    position: absolute;
+    top: 10px;
+    left: 70px;
+    font-size: 26px;
+
+}
+#fundo #escrito div:last-child{
+    background-image: url(../imagens/box-text-white.png);
+}
+#fundo #escrito div:last-child h2:last-child{
+    left: 20px;
+    color: black;
+}
+#fundo #escrito div:first-child h2:first-child{
+    left: 50px;
 }
 
+    /*carros*/
+
+.carros{
+    width: 32%;
+    display: inline-block;
+    margin-right: 5px;
+}
+.carros img{
+    width: 100%;
+    border: 1px solid #fe373a;
+    padding: 1px;
+}
+.carros h4{
+    font-size: 25px;
+}
+.carros p{
+    font-size: 20px;
+    color: rgb(61, 61, 61);
+}
+
+        /*Sobre*/
+
+#sobre{
+    display: flex;
+    flex-direction: row;
+    margin: 100px 0;
+    color: white;
+}
+#sobre >div .escrito{
+    font-size: 25px;
+    margin: 70px 90px;
+}
+#sobre > div .escrito ul{
+    padding-left: 30px ;
+    float: left;
+}
+#sobre > div .escrito input{
+    float: right;
+    margin: 80px 70px 0 0;
+    
+}
+#sobre #left{
+    background-color: #242424;
+    width: 50%;
+    height: 400px;
+}
+#sobre #left li{
+    font-size: 20px;
+}
+
+#sobre #right{
+    background-color: #EB2D2D;
+    width: 50%;
+    height: 400px;
+}
+#sobre #right h2{
+    margin-top: 80px;
+
+}
+#sobre #right p{
+    font-size: 20px;
+}
+#sobre #right #nome{
+    color: #242424;
+    float: right;
+    margin: 30px 100px 0 0;
+}
+#sobre #right #setas{
+    float: left;
+}
+#sobre #right #setas img{
+    margin: 30px 50px 0 0;
+}
+
+    /*formulario*/
+
+#formulario{
+    width: 45%;
+    margin: auto;
+}
+#formulario input{
+    width: 100%;
+    margin: 10px auto;
+    height: 50px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    padding-left:10px ;
+}
+#formulario #linha2 input{
+    width: 49%;
+    border: 1px solid gray;
+}
+#formulario #linha2 input:last-child{
+    float: right;
+}
+#formulario #linha2 input:first-child{
+    float: left;
+}
+#formulario textarea{
+    width: 100%;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    padding-left:10px ;
+}
+#formulario .bt{
+    display: block;
+    width: 40%;
+    margin-bottom: 50px;
+}
+
+
+
+
+    /*footer*/
+
+footer{
+    background-color: #252525;
+    color: white;
+    font-size: 25px;
+    width: 100%;
+    height: 120px;
+}
+footer ul{
+    margin: 2% 5%;
+    float: left;
+}
+footer ul li{
+    display: inline-block;
+    margin-right: 50px;
+}
+footer ul li a{
+    text-decoration: none;
+    color: white;
+}
+footer ul li .atual{
+    color: #EC2E30;
+}
+footer ul li a:hover{
+    color: #fe373a;
+}
+footer ul li a:active{
+    color: #EC2E30;
+}
+footer p{
+    float: right;
+    margin: 2% 5%;
+}
+
+
+
+        
+
+
+
+    /*CLASS*/    
+
+        /*Botoes*/
+    
+.bt{
+    background-color: #EC2E30;
+    border: 0;
+    color: white;
+    width: 160px;
+    height: 50px;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px #5e0000;
+    border-bottom: 5px solid #B21E1E;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+        /*Titulos*/
+
+    .destaque{
+        width: 90%;
+        margin: auto;
+    }
+    .destaque .titulo{
+        margin: 50px auto;
+        text-align: center;
+    }
+    .destaque .titulo .linha{
+        border-bottom: 2px solid black;
+        position: relative;
+        top: 30px;
+    }
+    .destaque .titulo h2{
+        background-color: white;
+        position: relative;
+        display: inline-block;
+        padding: 0 20px;
+        font-size: 35px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*Responsivo*/
+
+@media screen and (max-width:950px) {
+    
+        /*Header*/
+
+    header nav{
+        display: none;
+    }
+    header #menumobile a{
+        width: 50px;
+        height: 40px;
+        background-image: url(../imagens/icon_menu.png);
+        float: right;
+        background-size: 80%;
+        background-repeat: no-repeat;
+        margin: 40px;
+    }
+
+        /*fundo*/
+
+    #fundo #escrito > div{
+        left: 30px;
+    }
+    #fundo{
+        background-position-x: 00px;
+
+    }
+
+        /*destaque carros*/
+    .carros{
+        display: block;
+        width: 90%;
+        margin: 20px auto;
+        background-color: rgb(238, 238, 238);
+        padding: 50px;
+        box-shadow: 1px 1px 1px 1px rgb(219, 219, 219);
+        
+    }
+    #sobre{
+        flex-direction: column;
+    }
+    #sobre #left{
+        width: 100%;
+    }
+    #sobre #left .bt{
+        float: left;
+        margin-top: 20px;
+    }
+    #sobre #right{
+        width: 100%;
+    }
+    #sobre #right #nome{
+        margin-right: 10px;
+    }
+
+        /*Formulario*/
+
+    #formulario{
+        width: 95%;
+    }
+
+
+
+        /*Footer*/
+
+    footer{
+        padding-top: 25px;
+        height: 80px;
+        text-align: center;
+    }
+    footer ul{
+        display: none;
+    }
+    footer p{
+        float: none;
+    }
+    
+}
