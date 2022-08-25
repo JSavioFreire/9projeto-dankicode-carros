@@ -258,6 +258,53 @@ footer p{
     border: 2px solid black;
 }
 
+
+/*Pagina vendas*/
+
+.carrosvenda{
+    width: 25%;
+    background-color: #242424;
+    color: white;
+    display: inline-block;
+    margin-right: 5%;
+    margin-bottom: 50px;
+    float: right;
+}
+.carrosvenda img{
+    width: 100%;
+    border: 1px solid #fe373a;
+    padding: 1px;
+}
+.carrosvenda h4{
+    font-size: 25px;
+}
+.carrosvenda p{
+    font-size: 20px;
+    color: rgb(194, 194, 194);
+}
+.carrosvenda input{
+    margin-left: 15px;
+}
+#flexivel{
+    display: flex;
+    flex-direction: row-reverse;
+}
+#flexivel #filtro > div{
+    display: block;
+    margin-right: 20px;
+}
+#flexivel #filtro #valorrange{
+    width: 200px;
+}
+#flexivel #filtro #setenta{
+    float: right;
+    margin-bottom: 50px;
+}
+#flexivel #filtro #zero{
+    float: left;
+}
+
+
         
 
 
